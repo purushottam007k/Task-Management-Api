@@ -1,0 +1,23 @@
+I am a bit more familiar with Python, which influenced my decision to code this project in Java, but I am willing to learn and explore Python for similar projects in the future. Here’s my approach to developing the task management system RESTful API:
+
+User Registration and Authentication:
+
+I implemented user registration using a POST request where users can sign up with a username and password. Passwords are securely hashed before being stored in the database to ensure security.
+For authentication, I used JSON Web Tokens  Once a user logs in, they receive a JWT token, which must be included in the header of subsequent requests to access protected endpoints.
+Task Management:
+
+The task management feature supports CRUD operations, allowing users to create, read, update, and delete tasks. Each task has fields like title, description, status, priority, due date, and user ID to associate tasks with specific users.
+I used a relational database  to store task and user data, and an ORM  to interact with the database efficiently.
+Filtering and Searching:
+
+I implemented filtering options for tasks based on their status, priority, and due date. Users can query tasks by specifying these parameters in their requests.
+For the search functionality, users can search tasks by title or description using a keyword-based search.
+Dockerization:
+
+I created a Dockerfile to containerize the application, making it easy to deploy and run in different environments. I also used a docker-compose.yml file to set up the application along with necessary services like the database.
+This setup helps streamline development and deployment processes, ensuring consistency across different stages of development.
+Assumptions Made
+Users have unique usernames for identification purposes.
+Tasks are primarily managed by the users who created them, and user roles are initially kept simple . Future enhancements could involve more complex role-based access control.
+The application environment uses Docker to ensure compatibility and easy deployment across various systems.
+A relational database was chosen for structured data storage, ensuring data integrity and supporting complex queries efficiently.
