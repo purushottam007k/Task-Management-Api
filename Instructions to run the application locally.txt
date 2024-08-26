@@ -1,0 +1,39 @@
+1. Prerequisites
+Make sure you have the following software installed on your machine:
+
+Java Development Kit (JDK) 17: Ensure that Java is installed and configured in your system's environment variables. You can check by running
+ 
+Maven: Apache Maven is required to build the project. You can check if Maven is installed by running
+
+Docker: Docker should be installed and running on your machine to use Docker and Docker Compose.
+ 
+2-Clone the Repository
+Clone the project repository from GitHub to your local machine
+
+3. Navigate to the Project Directory
+Change your directory to the root of the project
+
+4-Configure the Database
+The application uses a relational database SQL configured via Docker Compose. Ensure you have Docker installed and running.
+
+Edit docker-compose.yml  Modify any necessary database configurations, such as database names, usernames, and passwords.
+
+5- Build the Project
+Use Maven to build the project. This will compile the code, download dependencies, and package the application
+
+6. Start the Application Using Docker
+To run the application along with the required database services, use Docker Compos
+
+7. Access the Application
+Once the application is up and running, you can access the API using the following URL
+http://localhost:8080/api/
+
+API Documentation
+The application includes API documentation using Swagger. Access the Swagger UI to explore the API documentation
+http://localhost:8080/swagger-ui.html
+
+
+
+
+
+
